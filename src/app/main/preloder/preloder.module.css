@@ -1,0 +1,81 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 3rem;
+  }
+  .loder {
+    width: 200%;
+    height: 100vh;
+    padding: 2em;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0.5em;
+    overflow: hidden;
+    z-index: 2;
+    background-color: #ebdc0b;
+  }
+  .loder p {
+    width: max-content;
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 80px;
+  }
+  .counter {
+    height: 100px;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 120px;
+    clip-path: polygon(0 0 , 100% 0 , 100% 100px , 0 100px);
+    overflow: hidden;
+  }
+  .digit-1,
+  .digit-2,
+  .digit-3,
+  .digit-4 {
+    position: relative;
+    top: -15px;
+  }
+  .num {
+    position: relative;
+    right: -7.5px;
+  }
+  .progressBar {
+    position: relative;
+    width: 0%;
+    height: 10px;
+    opacity: 0;
+    top: -15px;
+    background-color: black;
+  }
+  .imgs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 5;
+  }
+  .imgs img {
+    padding: 20px;
+    position: absolute;
+    width: 100% ;
+    height: 100% ;
+    object-fit: cover;
+    clip-path: polygon(100% 0% ,100% 0% , 100% 100% ,100% 100%);
+  }
+  @media (max-width : 768px) {
+    .loder p {
+      font-size: 40px;
+    }
+    .counter {
+      font-size: 70px;
+    }
+  }
+  
