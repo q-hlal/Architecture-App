@@ -37,15 +37,17 @@ a{
   cursor: pointer;
   font-size: 15px;
   font-weight: 400;
+  color: white;
+  background-color: #8365E4;
   border:  1px solid lightgray;
 }
 
 @media (max-width : 768px) {
   .nav{
-    font-size: 14px;
+    font-size: 12px;
   }
   .header h2{
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .header button{

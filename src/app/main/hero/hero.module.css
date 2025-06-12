@@ -3,7 +3,7 @@
   height: 100vh;
   background-color: #000;
   position: relative;
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .model {

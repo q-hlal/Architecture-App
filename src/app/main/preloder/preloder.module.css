@@ -43,7 +43,6 @@
   }
   .num {
     position: relative;
-    right: -7.5px;
   }
   .progressBar {
     position: relative;
@@ -71,11 +70,21 @@
     clip-path: polygon(100% 0% ,100% 0% , 100% 100% ,100% 100%);
   }
   @media (max-width : 768px) {
-    .loder p {
-      font-size: 40px;
+    .loder{
+      right: -20px;
     }
+    .loder p , .counter{
+      margin-bottom: 20px;
+    }
+    .progressBar {
+      margin-bottom: 40px;
+    }
+    .loder p{
+      font-size: 25px;
+    }
+ 
     .counter {
-      font-size: 70px;
+      font-size: 40px;
     }
   }
   
