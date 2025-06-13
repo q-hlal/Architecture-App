@@ -65,10 +65,9 @@
 }
 
 .text h1 span {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   vertical-align: middle;
-  margin-left: 20px;
-  padding-right: 10px;
+  color: rgb(180, 180, 180)
 }
 
 .text p {
@@ -147,6 +146,9 @@
   .text p {
     font-size: 1rem;
   }
+  .text h1 span {
+  font-size: 1.5rem;
+  }
   .number h2 {
     font-size: 13rem;
   }
@@ -157,20 +159,29 @@
     max-width: 70%;
     max-height: 90%;
   }
-  .img::before,
+.img::before,
 .img::after {
   display: none;
 }
 }
 @media (max-width: 768px) {
   .text h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .left, .right {
     max-width: 100%;
     padding: 0; 
   }
+
+  .number h2{
+    font-size: 10rem;
+  }
+
+  .text h1 span {
+  font-size: 1rem;
+  }
+
   .img {
     margin-bottom: 0;
   }
@@ -186,7 +197,7 @@
   }
 
   .ImgDes p, .text p {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     margin: 0;
   }
 }

@@ -32,11 +32,6 @@ const ScrollAnimation = ({ modelRef, textRef }) => {
         opacity: 0,
         duration: 0.5,
         ease: "power2.out",
-        onComplete: () => {
-          if (textRef.current) {
-            textRef.current.style.display = "none";
-          }
-        },
       });
     }
   });
@@ -70,20 +65,15 @@ const Hero = () => {
           <h1>Welcome To Your Dream Home</h1>
           <h3>Scroll more</h3>
         </div>
-       <Canvas
+        <Canvas
           camera={{
             fov: 64,
             position: [1.3, 0.5, 3.3],
           }}
-          style={{ touchAction: 'auto' }} 
         >
           <ambientLight intensity={3} />
           <OrbitControls enableZoom={false} enableRotate={false} enablePan={false} />
-          <ScrollControls
-            pages={4}
-            damping={0.25}
-            html
-          >
+          <ScrollControls pages={4} damping={0.25}>
             <ScrollAnimation modelRef={modelRef} textRef={textRef} />
             <House />
           </ScrollControls>

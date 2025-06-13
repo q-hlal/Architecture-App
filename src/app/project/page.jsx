@@ -41,7 +41,7 @@ const Project = () => {
           <div className={styles.card} key={index}>
              <div className={styles.left}>
               <div className={styles.text}>
-                <h1><span>{item.date}</span>{item.title}</h1>
+                <h1>{item.title}<br/><span>{item.date}</span></h1>
                 <p>{item.des}</p>
               </div>
               <div className={styles.number}>
